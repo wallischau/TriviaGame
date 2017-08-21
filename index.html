@@ -1,0 +1,82 @@
+<!-- Title: Trivia game                                      -->
+<!-- Author: Wallis Chau                                     -->
+<!-- Description: User answers multiple choice questions     -->
+<!--              Summary is shown at the end                -->
+<!-- Date: 8/25/17                                           -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Total Trivia</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- start page -->
+	<div class="container">
+		<section class="row">
+			<div class="col-md-8 col-md-offset-2" id="title">
+				<h1 class="jumbotron text-center">Total Trivial Trivia</h1>
+			</div>
+		</section>
+
+		<!-- question/answer choice page -->
+		<section class="row">
+			<div class="col-md-4 col-md-offset-4 ">
+				<button class="btn btn-success btn-lg btn-block" id="startbtn"><h2>Start</h2></button>
+			</div>
+		</section>
+		<section class="row q-a-row">
+			<div class="col-md-8 col-md-offset-2 q-a" id="question-text"></div>
+		</section>
+		<section class="row q-a-row">
+			<div class="col-md-6 col-md-offset-3 answer q-a" id="answer1-text"></div>
+		</section>
+		<section class="row q-a-row">
+			<div class="col-md-6 col-md-offset-3 answer q-a" id="answer2-text"></div>
+		</section>
+		<section class="row q-a-row">
+			<div class="col-md-6 col-md-offset-3 answer q-a" id="answer3-text"></div>
+		</section>
+		<section class="row q-a-row">
+			<div class="col-md-6 col-md-offset-3 answer q-a" id="answer4-text"></div>
+		</section>
+
+		<!-- result page -->
+		<section class="row">
+			<!-- timer -->
+			<div class="col-md-4 col-md-offset-4 time" id="timer"></div>
+		</section>
+		<section class="row">
+			<!-- correct/incorrect -->
+			<div class="col-md-4 col-md-offset-4" id="Y_N"></div>
+		</section>
+		<section class="row">
+			<!-- show answer -->
+			<div class="col-md-8 col-md-offset-2" id="answer-key"></div>
+		</section>
+		<section class="row">
+			<!-- end game message -->
+			<div class="col-md-4 col-md-offset-4" id="end-msg"></div>
+		</section>
+		<section class="row end-result">
+			<!-- show result stat -->
+			<div class="col-md-4 col-md-offset-4" id="result-stat">
+			<div class="stat" id="correct-stat"></div>
+			<div class="stat" id="incorrect-stat"></div>
+			<div class="stat" id="unanswer-stat"></div>
+			<br>
+			</div>
+		</section>
+		<section class="row">
+			<!-- restart button -->
+			<div class="col-md-2 col-md-offset-5 " id="restart"></div>
+		</section>
+
+	</div> <!--container-->
+
+
+
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/*Title: Trivia game                                  */
+/*Author: Wallis Chau                                 */
+/*Description: User answers multiple choice questions */
+/*Summary is shown at the end                         */
+/*Date: 8/25/17                                       */
+body {
+	background-image: url("../images/AFD025.jpg");
+	background-size: cover;
+}
+.col-md-8, .col-md-4, .col-md-2, .col-md-6 {
+	margin-top: 2px;
+}
+
+#timer {
+	margin-top: 20px;
+}
+
+h2, h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
