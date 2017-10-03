@@ -27,41 +27,79 @@ var QuestionSet = {
 
 //create object {question, answersx4}, one per question set
 var question1 = Object.create(QuestionSet);
-question1.question = "what does A stand for?";
-question1.answer1 = "apple";
-question1.answer2 = "away";
-question1.answer3 = "excellent";
-question1.answer4 = "abstract";
-question1.key = 1;
+question1.question = "Example of front-end development tool?";
+question1.answer1 = "mySQL";
+question1.answer2 = "C#";
+question1.answer3 = "HTML";
+question1.answer4 = "nodeJS";
+question1.key = 3;
 questionList.push(question1);
 
 var question2 = Object.create(QuestionSet);
-question2.question = "what does B stand for?";
-question2.answer1 = "basic";
-question2.answer2 = "boy";
-question2.answer3 = "bingo";
-question2.answer4 = "banana";
-question2.key = 2;
+question2.question = "Examle of Object oriented programming language";
+question2.answer1 = "C";
+question2.answer2 = "Pascal";
+question2.answer3 = "fortran";
+question2.answer4 = "Java";
+question2.key = 4;
 questionList.push(question2);
 
 var question3 = Object.create(QuestionSet);
-question3.question = "what does C stand for?";
-question3.answer1 = "programming language";
-question3.answer2 = "cat";
-question3.answer3 = "celcius";
-question3.answer4 = "capacitor";
-question3.key = 2;
+question3.question = "In HTML, which tag is used to show hyperlink?";
+question3.answer1 = "< a >";
+question3.answer2 = "< h >";
+question3.answer3 = "< p >";
+question3.answer4 = "< l >";
+question3.key = 1;
 questionList.push(question3);
+console.log(questionList);
 
 var question4 = Object.create(QuestionSet);
-question4.question = "what does D stand for?";
-question4.answer1 = "low grade";
-question4.answer2 = "done";
-question4.answer3 = "dog";
-question4.answer4 = "david";
+question4.question = "In CSS, which attribute sets an element next to previous one?";
+question4.answer1 = "set";
+question4.answer2 = "position";
+question4.answer3 = "float";
+question4.answer4 = "next";
 question4.key = 3;
 questionList.push(question4);
 //console.log(questionList);
+
+var question5 = Object.create(QuestionSet);
+question5.question = "In JQuery, which statement create a DOM object?";
+question5.answer1 = "var obj = < h1 >";
+question5.answer2 = "var obj = $(<'h1'>)";
+question5.answer3 = "var obj = $(h1)";
+question5.answer4 = "var obj = {'h1'}";
+question5.key = 2;
+questionList.push(question5);
+//console.log(questionList);
+
+var question6 = Object.create(QuestionSet);
+question6.question = "Function to set timer in javascript?";
+question6.answer1 = "setTimer";
+question6.answer2 = "setInterval";
+question6.answer3 = "setTimeout";
+question6.answer4 = "setTime";
+question6.key = 3;
+questionList.push(question6);
+
+var question7 = Object.create(QuestionSet);
+question7.question = "How to create object of type Animal in javascript?";
+question7.answer1 = "var animal = new Animal()\;";
+question7.answer2 = "var animal = Animal()\;";
+question7.answer3 = "var animal = Animal\;";
+question7.answer4 = "var animal = animal()\;";
+question7.key = 1;
+questionList.push(question7);
+
+var question8 = Object.create(QuestionSet);
+question8.question = "Way to make responsive web design with CSS?";
+question8.answer1 = "using SQL query";
+question8.answer2 = "using media query";
+question8.answer3 = "using jquery";
+question8.answer4 = "using responsive tag";
+question8.key = 2;
+questionList.push(question8);
 
 //current question
 var curQuestion = 0;
@@ -264,7 +302,7 @@ $('#startbtn').click(function() {
 function countDown() {
 	//display time
 	$('#timer').html('<h3 class="text-center">' + 'Time remain: ' + --timerCounter + '</h3>');
-	console.log(timerCounter);
+	// console.log(timerCounter);
 }
 
 /* description: time out at question   */
